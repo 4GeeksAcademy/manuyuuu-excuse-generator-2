@@ -28,7 +28,7 @@ window.onload = function() {
 
   function generateExcuse() {
     function getRandomNumber(min, max) {
-      return Math.floor(Math.random() * (max - min) + min);
+      return Math.floor(Math.random() * (max - min + 1) + min); //añadí más uno ya que antes nunca se seleccionaba el último elemento del array :)
     }
 
     function getRandom(anyArray) {
